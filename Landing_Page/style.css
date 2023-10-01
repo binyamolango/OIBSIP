@@ -19,10 +19,44 @@ h4 {
   font-family: 'Playfair Display', serif;
 }
 
+img {
+  max-width: 100%;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
 .headline {
   background-image: url(./assets/expressVPNBackground.png);
+  background-color: #f1eace;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center bottom;
+  min-height: 250px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+}
+
+.lang {
+  width: 100%;
+  text-align: right;
+}
+
+.location {
+  background-image: url(./assets/map.png);
+  background-color:#fcf3f4;
+  background-repeat: no-repeat;
+  background-size: 80%;
   background-position: center;
-  min-height: 50vh;
+  min-height: 250px;
 }
