@@ -28,7 +28,7 @@ button {
   background: none;
 }
 
-.headline {
+.section-one {
   background-image: url(./assets/expressVPNBackground.png);
   background-color: #f1eace;
   background-repeat: no-repeat;
@@ -44,11 +44,12 @@ button {
 }
 
 .logo {
-  width: 100%;
+  width: 40%;
+  display: flex;
 }
 
 .lang {
-  width: 100%;
+  width: 50%;
   text-align: right;
 }
 
