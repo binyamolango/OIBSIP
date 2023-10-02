@@ -8,8 +8,16 @@
   padding: 0;
 }
 
+:root {
+  --btnColor: #0e876c;
+  --textColor: #011c31;
+  --headlineBG: #f1eace;
+  --locationBG: #fcf3f4;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
+  color: var(--textColor);
 }
 
 h1,
@@ -28,34 +36,135 @@ button {
   background: none;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
 .section-one {
   background-image: url(./assets/expressVPNBackground.png);
-  background-color: #f1eace;
+  background-color: var(--headlineBG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
-  min-height: 250px;
+  min-height:300px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1em 0;
 }
 
 .logo {
-  width: 40%;
+  width: 100px;
   display: flex;
 }
 
 .lang {
   width: 50%;
   text-align: right;
+  font-size: 0.6rem;
+}
+
+.headline {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
+
+.headline-title {
+  font-size: 2rem;
+}
+
+.headline-desc {
+  font-weight: 700;
+}
+
+.headline-desc,
+.btn {
+  font-size: 0.6rem;
+}
+
+.btn {
+  background-color: var(--btnColor);
+  color: #fff;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.75em 1.5em;
+  border-radius: 30px;
+  font-weight: 300;
+}
+
+.headline-promo {
+  font-size: 0.4rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 0;
+}
+
+.container-main {
+  width: 70%;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 3em;
+}
+
+.card:last-of-type {
+  margin-bottom: 0;
+}
+
+.cardImg {
+  display: flex;
+  width: 47%;
+}
+
+.cardImg:nth-of-type(2) {
+  justify-content: flex-end;
+}
+
+.cardImg img {
+  width: 70%;
+}
+
+.cardDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+  width: 47%;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.cardDesc {
+  font-size: 0.6rem;
+}
+
+.cardBtn {
+  margin: 0;
 }
 
 .location {
   background-image: url(./assets/map.png);
-  background-color:#fcf3f4;
+  background-color: var(--locationBG);
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: center;
