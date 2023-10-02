@@ -42,6 +42,14 @@ button {
   max-width: 700px;
 }
 
+.container-main,
+.container-adv,
+.container-loc {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
 .section-one {
   background-image: url(./assets/expressVPNBackground.png);
   background-color: var(--headlineBG);
@@ -115,13 +123,6 @@ button {
   justify-content: center;
   align-items: center;
   padding: 4em 0;
-}
-
-.container-main,
-.container-adv {
-  width: 80%;
-  margin: 0 auto;
-  max-width: 700px;
 }
 
 .card {
@@ -222,4 +223,36 @@ button {
 .location {
   background-color: var(--locationBG);
   min-height: 350px;
+  padding: 3em 0;
+  font-family: '';
+}
+
+.locationTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.loc {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  align-items: center;
+}
+
+.locationDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.locNum {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.locText {
+  font-size: 0.6rem;
+  font-weight: 600;
 }
