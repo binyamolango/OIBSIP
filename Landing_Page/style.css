@@ -74,11 +74,11 @@ button {
 .lang {
   width: 50%;
   text-align: right;
-  font-size: 0.6rem;
+  font-size: 0.5rem;
 }
 
 .downArrow {
-  font-size: 0.6rem;
+  font-size: 0.5rem;
 }
 
 .headline {
@@ -237,7 +237,7 @@ button {
 .loc {
   display: flex;
   justify-content: space-between;
-  gap: 1em;
+  gap: 1.25em;
   align-items: center;
 }
 
@@ -249,10 +249,88 @@ button {
 
 .locNum {
   font-size: 2rem;
-  font-weight: 600;
 }
 
 .locText {
   font-size: 0.6rem;
+}
+
+.locNum,
+.locText {
   font-weight: 600;
+}
+
+@media screen and (min-width: 768px)  {
+  .section-one {
+    min-height: 350px;
+  }
+
+  .logo {
+    width: 125px;
+  }
+
+  .lang,
+  .downArrow {
+    font-size: 0.7rem;
+  }
+
+  .headline {
+    gap: 0.8em;
+  }
+
+  .headline-title {
+    font-size: 2.5rem;
+  }
+
+  .headline-desc {
+    margin-top: -10px;
+  }
+
+  .headline-desc,
+  .btn {
+    font-size: 0.7rem;
+  }
+
+  .btn {
+    padding: 0.75em 1.75em;
+  }
+
+  .headline-promo {
+    font-size: 0.5rem;
+  }
+
+  .container {
+    width: 80%;
+    max-width: 1440px;
+  }
+  
+  .container-main,
+  .container-adv,
+  .container-loc {
+    width: 70%;
+    max-width: 1440px;
+  }
+
+  .cardTitle,
+  .advTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .cardDesc,
+  .advDesc {
+    font-size: 0.7rem;
+  }
+
+  .locationTitle {
+    font-size: 2rem;
+  }
+
+  .locNum {
+    font-size: 3rem;
+  }
+  
+  .locText {
+    font-size: 1rem;
+  }
 }
