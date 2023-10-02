@@ -220,10 +220,6 @@ button {
 }
 
 .location {
-  background-image: url(./assets/map.png);
   background-color: var(--locationBG);
-  background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: center;
-  min-height: 250px;
+  min-height: 350px;
 }
