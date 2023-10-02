@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --btnColor: #0e876c;
+  --textColor: #011c31;
+  --headlineBG: #f1eace;
+  --locationBG: #fcf3f4;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--textColor);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.container-main,
+.container-adv,
+.container-loc {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.section-one {
+  background-image: url(./assets/expressVPNBackground.png);
+  background-color: var(--headlineBG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  min-height:300px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.logo {
+  width: 100px;
+  display: flex;
+}
+
+.lang {
+  width: 50%;
+  text-align: right;
+  font-size: 0.5rem;
+}
+
+.downArrow {
+  font-size: 0.5rem;
+}
+
+.headline {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
+
+.headline-title {
+  font-size: 2rem;
+}
+
+.headline-desc {
+  font-weight: 700;
+}
+
+.headline-desc,
+.btn {
+  font-size: 0.6rem;
+}
+
+.btn {
+  background-color: var(--btnColor);
+  color: #fff;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.75em 1.5em;
+  border-radius: 30px;
+  font-weight: 300;
+}
+
+.headline-promo {
+  font-size: 0.4rem;
+}
+
+/* style the main / card section */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4em 0;
+}
+
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 3em;
+}
+
+.card:last-of-type {
+  margin-bottom: 0;
+}
+
+.cardImg {
+  display: flex;
+  width: 47%;
+}
+
+.cardImg:nth-of-type(2) {
+  justify-content: flex-end;
+}
+
+.cardImg img {
+  width: 70%;
+}
+
+.cardDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+  width: 47%;
+}
+
+.cardTitle,
+.advTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.cardDesc,
+.advDesc {
+  font-size: 0.5rem;
+}
+
+.cardBtn {
+  margin: 0;
+}
+
+.appIcons {
+  display: flex;
+  gap: 0.5em;
+}
+
+.app {
+  background-color: lightgray;
+  font-size: x-small;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seeAll {
+  color: var(--btnColor);
+  font-size: 0.6rem;
+}
+
+/* style the advantages section */
+
+.advantages {
+  padding-bottom: 4em;
+}
+
+.adv-row {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.adv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  text-align: center;
+  width: 32%;
+}
+
+.seeAllAdv {
+  margin-top: 1.5em;
+}
+
+.location {
+  background-color: var(--locationBG);
+  min-height: 350px;
+  padding: 3em 0;
+  font-family: '';
+}
+
+.locationTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.loc {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25em;
+  align-items: center;
+}
+
+.locationDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.locNum {
+  font-size: 2rem;
+}
+
+.locText {
+  font-size: 0.6rem;
+}
+
+.locNum,
+.locText {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px)  {
+  .section-one {
+    min-height: 350px;
+  }
+
+  .logo {
+    width: 125px;
+  }
+
+  .lang,
+  .downArrow {
+    font-size: 0.7rem;
+  }
+
+  .headline {
+    gap: 0.8em;
+  }
+
+  .headline-title {
+    font-size: 2.5rem;
+  }
+
+  .headline-desc {
+    margin-top: -10px;
+  }
+
+  .headline-desc,
+  .btn {
+    font-size: 0.7rem;
+  }
+
+  .btn {
+    padding: 0.75em 1.75em;
+  }
+
+  .headline-promo {
+    font-size: 0.5rem;
+  }
+
+  .container {
+    width: 80%;
+    max-width: 1440px;
+  }
+  
+  .container-main,
+  .container-adv,
+  .container-loc {
+    width: 70%;
+    max-width: 1440px;
+  }
+
+  .cardTitle,
+  .advTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .cardDesc,
+  .advDesc {
+    font-size: 0.7rem;
+  }
+
+  .locationTitle {
+    font-size: 2rem;
+  }
+
+  .locNum {
+    font-size: 3rem;
+  }
+  
+  .locText {
+    font-size: 1rem;
+  }
+}
