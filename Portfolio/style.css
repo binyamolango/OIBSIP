@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 :root {
   --button-color: #ffbc5f;
   --dark-BG: #323345;
@@ -40,4 +48,29 @@ button {
 
 p {
   font-size: var(--smaller-font);
+}
+
+.headline {
+  background: linear-gradient(to bottom, var(--dark-BG) 70%, var(--dark-BG) 70%, var(--darker-BG) 30%);
+  min-height: 100vh;
+}
+
+.about {
+  background: linear-gradient(to bottom, var(--darker-BG) 70%, var(--darker-BG) 70%, var(--dark-BG) 30%);
+  min-height: 100vh;
+}
+
+.portfolio {
+  background: var(--dark-BG);
+  min-height: 100vh;
+}
+
+.blog {
+  background: var(--darker-BG);
+  min-height: 100vh;
+}
+
+.contact {
+  background: var(--dark-BG);
+  min-height: 100vh;
 }
