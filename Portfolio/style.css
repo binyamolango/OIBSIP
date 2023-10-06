@@ -55,7 +55,7 @@ button {
 p {
   font-size: var(--smaller-font);
   line-height: 1.75;
-  opacity: 0.75;
+  opacity: 0.5;
 }
 
 img {
@@ -83,8 +83,8 @@ a {
   background-image: url(./assets/BY-img.png);
   background-repeat: no-repeat;
   background-position: bottom right 56%;
-  background-size: 25%;
-  min-height: 80vh;
+  background-size: 275px;
+  min-height: 450px;
 }
 
 .headline {
@@ -104,6 +104,12 @@ a {
   font-size: var(--medium-font);
   font-family: var(--header-font);
   font-weight: 500;
+  opacity: 0.5;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  opacity: 1;
 }
 
 .left-section {
@@ -122,7 +128,7 @@ a {
   background-color: var(--button-color);
   height: 5px;
   width: 40px;
-  margin: 1.5em 0 4.5em 0;
+  margin: 1.5em 0 4em 0;
 }
 
 .socials {
@@ -147,6 +153,10 @@ a {
   display: flex;
   align-items: center;
   gap: 1em;
+}
+
+.intro-btn-text {
+  text-decoration: underline;
 }
 
 .about {
