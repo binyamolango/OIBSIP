@@ -14,6 +14,7 @@
   --darker-BG: #232532;
   --text-color: #e8e7ed;
   --highlight-color: #fead20;
+  --highlight-color2: #414457;
   --text-font: 'Lato', sans-serif;
   --header-font: 'Poppins', sans-serif;
   --larger-font: 3.5rem;
@@ -177,16 +178,12 @@ a {
 }
 
 .contact-section {
-  width: 50%;
-}
-
-.contact-section:nth-of-type(2) {
   width: 100%;
 }
 
 .contact .row {
   justify-content: flex-start;
-  gap: 25%;
+  gap: 10%;
 }
 
 .stats h2 {
@@ -195,6 +192,32 @@ a {
 
 .stats p {
   opacity: 1;
+}
+
+.boxs .row {
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.boxs {
+  margin-top: 6em;
+}
+
+.box {
+  background: var(--highlight-color2);
+  border-radius: 2px;
+  width: 32%;
+  height: 250px;
+  padding: 8em 0 0 2em;
+}
+
+.box-desc {
+  margin-left: 1em;
+}
+
+.box:first-of-type {
+  background: var(--highlight-color);
 }
 
 .portfolio {
