@@ -145,30 +145,35 @@ a {
 }
 
 .intro-section,
-.contact-section {
+.contact-section,
+.portfolio-section {
   padding-top: 4em;
 }
 
 .intro-intro,
-.contact-contact {
+.contact-contact,
+.portfolio-portfolio {
   letter-spacing: 1.25px;
   margin-bottom: 1em;
 }
 
 .intro-desc,
-.contact-desc {
+.contact-desc,
+.portfolio-desc {
   padding: 2em 0;
 }
 
 .intro-btn,
-.contact-btn {
+.contact-btn,
+.portfolio-btn {
   display: flex;
   align-items: center;
   gap: 1em;
 }
 
 .intro-btn-text,
-.contact-btn-text {
+.contact-btn-text,
+.portfolio-btn-text {
   text-decoration: underline;
 }
 
@@ -222,8 +227,10 @@ a {
 
 .portfolio {
   background: var(--dark-BG);
-  min-height: 100vh;
+  min-height: 700px;
 }
+
+
 
 .blog {
   background: var(--darker-BG);
