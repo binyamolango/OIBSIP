@@ -149,13 +149,15 @@ a {
 }
 
 .contact-section,
-.portfolio-section {
+.portfolio-section,
+.blog-section {
   padding-top: 6em;
 }
 
 .intro-intro,
 .contact-contact,
-.portfolio-portfolio {
+.portfolio-portfolio,
+.blog-blog {
   letter-spacing: 1.25px;
   margin-bottom: 1em;
 }
@@ -252,9 +254,68 @@ a {
   width: 43%;
 }
 
+.blog .row {
+  gap: 0;
+}
+
+.blog-left {
+  width: 35%;
+}
+
+.blog-right {
+  width: 55%;
+}
+
+.blog-btn {
+  color: var(--text-color);
+  align-items: center;
+  border-bottom: 1px solid var(--text-color);
+  margin: 2em 0;
+  padding-bottom: 2em;
+  width: 100%;
+}
+
+.blog-btn3 {
+  border: none;
+}
+
+.arrow-icon {
+  color: var(--button-color);
+}
+
+.blog-quote {
+  padding-top: 4em;
+}
+
+.quote-icon {
+  opacity: 0.5;
+  font-size: var(--medium-font);
+}
+
+.quote-text {
+  margin: 0.5em 0 1em 0;
+}
+
+.quote-author {
+  margin-bottom: 0.5em;
+}
+
+.lines {
+  justify-content: flex-start;
+}
+
+.blog .line {
+  margin-right: 1em;
+}
+
+.linex {
+  background: var(--text-color);
+  opacity: 0.5;
+}
+
 .blog {
   background: var(--darker-BG);
-  min-height: 100vh;
+  min-height: 700px;
 }
 
 .footer {
