@@ -50,6 +50,7 @@ button {
   background: none;
   border: none;
   color: var(--button-color);
+  cursor: pointer;
 }
 
 p {
@@ -65,6 +66,7 @@ img {
 a {
   text-decoration: none;
   color: var(--text-color);
+  cursor: pointer;
 }
 
 .container {
@@ -78,13 +80,18 @@ a {
   justify-content: space-between;
 }
 
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
 .headline {
   background-color: var(--dark-BG);
   background-image: url(./assets/BY-img.png);
   background-repeat: no-repeat;
   background-position: bottom right 56%;
   background-size: 275px;
-  min-height: 450px;
+  min-height: 460px;
 }
 
 .headline {
@@ -136,32 +143,58 @@ a {
   gap: 1em;
 }
 
-.intro-section {
+.intro-section,
+.contact-section {
   padding-top: 4em;
 }
 
-.intro-intro {
+.intro-intro,
+.contact-contact {
   letter-spacing: 1.25px;
   margin-bottom: 1em;
 }
 
-.intro-desc {
+.intro-desc,
+.contact-desc {
   padding: 2em 0;
 }
 
-.intro-btn {
+.intro-btn,
+.contact-btn {
   display: flex;
   align-items: center;
   gap: 1em;
 }
 
-.intro-btn-text {
+.intro-btn-text,
+.contact-btn-text {
   text-decoration: underline;
 }
 
-.about {
+.contact {
   background: linear-gradient(to bottom, var(--darker-BG) 80%, var(--darker-BG) 80%, var(--dark-BG) 20%);
-  min-height: 100vh;
+  min-height: 650px;
+}
+
+.contact-section {
+  width: 50%;
+}
+
+.contact-section:nth-of-type(2) {
+  width: 100%;
+}
+
+.contact .row {
+  justify-content: flex-start;
+  gap: 25%;
+}
+
+.stats h2 {
+  color: var(--button-color);
+}
+
+.stats p {
+  opacity: 1;
 }
 
 .portfolio {
@@ -174,7 +207,7 @@ a {
   min-height: 100vh;
 }
 
-.contact {
+.footer {
   background: var(--dark-BG);
   min-height: 100vh;
 }
