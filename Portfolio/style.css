@@ -18,13 +18,14 @@
   --header-font: 'Poppins', sans-serif;
   --larger-font: 3.5rem;
   --large-font: 2.5rem;
-  --medium-font: 2rem;
+  --medium-font: 1.5rem;
   --small-font: 1rem;
   --smaller-font: 0.8rem;
 }
 
 body {
   font-family: var(--text-font);
+  color: var(--text-color);
 }
 
 h1 {
@@ -50,13 +51,54 @@ p {
   font-size: var(--smaller-font);
 }
 
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .headline {
-  background: linear-gradient(to bottom, var(--dark-BG) 70%, var(--dark-BG) 70%, var(--darker-BG) 30%);
-  min-height: 100vh;
+  background-color: var(--dark-BG);
+  background-image: url(./assets/BY-img.png);
+  background-repeat: no-repeat;
+  background-position: bottom right 60%;
+  background-size: 285px;
+  min-height: 80vh;
+}
+
+.header {
+  padding-top: 3.25em;
+}
+
+.logo {
+  width: 50px;
+}
+
+.nav-list {
+  list-style: none;
+  gap: 1em;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: var(--medium-font);
+  font-family: var(--header-font);
+  font-weight: 500;
 }
 
 .about {
-  background: linear-gradient(to bottom, var(--darker-BG) 70%, var(--darker-BG) 70%, var(--dark-BG) 30%);
+  background: linear-gradient(to bottom, var(--darker-BG) 80%, var(--darker-BG) 80%, var(--dark-BG) 20%);
   min-height: 100vh;
 }
 
