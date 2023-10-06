@@ -150,7 +150,8 @@ a {
 
 .contact-section,
 .portfolio-section,
-.blog-section {
+.blog-section,
+.footer-section {
   padding-top: 6em;
 }
 
@@ -163,14 +164,14 @@ a {
 }
 
 .intro-desc,
-.contact-desc,
-.portfolio-desc {
+.contact-desc {
   padding: 2em 0;
 }
 
 .intro-btn,
 .contact-btn,
-.portfolio-btn {
+.portfolio-btn,
+.footer-btn {
   display: flex;
   align-items: center;
   gap: 1em;
@@ -178,7 +179,8 @@ a {
 
 .intro-btn-text,
 .contact-btn-text,
-.portfolio-btn-text {
+.portfolio-btn-text,
+.footer-btn-text {
   text-decoration: underline;
 }
 
@@ -197,7 +199,8 @@ a {
 }
 
 .contact-desc-left,
-.portfolio-desc {
+.portfolio-desc,
+.footer-desc {
   padding: 1.5em 0 5.5em 0;
 }
 
@@ -275,6 +278,10 @@ a {
   width: 100%;
 }
 
+.blog-title {
+  padding: 0 1em;
+}
+
 .blog-btn3 {
   border: none;
 }
@@ -320,5 +327,41 @@ a {
 
 .footer {
   background: var(--dark-BG);
-  min-height: 100vh;
+  min-height: 750px;
+}
+
+.footer-left {
+  width: 35%;
+}
+
+.footer-right {
+  width: 50%;
+}
+
+.form-title {
+  margin-bottom: 1em;
+}
+
+.form-input {
+  margin: 2em 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.submit-btn {
+  margin-left: 1em;
+}
+
+.footer-social {
+  align-items: center;
+  padding-top: 9em;
+}
+
+.footer-text {
+  margin: 1.5em 0 3.5em 0;
+}
+
+.footer-span {
+  opacity: 0.5;
 }
