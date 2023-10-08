@@ -1,0 +1,31 @@
+.content {
+  width: 80%;
+  margin: 6% auto;
+  max-width: 600px;
+}
+
+.app_title {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.form_input {
+  border: none;
+  border-bottom: 1px solid lightgray;
+  border-radius: 0;
+}
+
+.result_cont {
+  display: block;
+  margin-bottom: 2em;
+}
+
+.result {
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  padding: 0.75em 1em 0 1em;
+}
+
+.convert_btn {
+  width: 100%;
+}
