@@ -11,8 +11,8 @@
     <h1>📗 Table of Contents</h1>
   </summary>
 
-- [Temperature Converter](#Temperature Converter)
-- [📖 Temperature Converter ](#-Temperature Converter-)
+- [Temperature Converter](#-Temperature-Converter-)
+- [📖 Temperature Converter ](#-Temperature-Converter-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
