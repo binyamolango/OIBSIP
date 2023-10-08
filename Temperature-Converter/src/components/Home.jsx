@@ -10,6 +10,7 @@ const Home = () => {
   const [inputDegreeValue, setInputDegreeValue] = useState('');
   const [inputType, setInputType] = useState('');
   const [result, setResult] = useState('');
+  const [resultType, setResultType] = useState('');
 
   const inputDegreeHandler = (e) => {
     setInputDegreeValue(e.target.value);
@@ -24,9 +25,11 @@ const Home = () => {
     if (inputType === 'Fahrenheit') {
       const tempResult = ((inputDegreeValue - 32) * 5) / 9;
       setResult(tempResult);
+      setResultType('Celsius');
     } else if (inputType === 'Celsius') {
       const tempResult = ((9 / 5) * inputDegreeValue) + 32;
-      setResult(tempResult); 
+      setResult(tempResult);
+      setResultType('Fahrenheit');
     }
   }
 
@@ -42,7 +45,8 @@ const Home = () => {
 
           <Form.Group as={Col} controlId="formGridState">
             <Form.Label>Type</Form.Label>
-            <Form.Select className={style.form_input} defaultValue="Fahrenheit" onChange={inputTypeHandler}>
+            <Form.Select className={style.form_input} defaultValue='Choose...' onChange={inputTypeHandler}>
+              <option>Choose...</option>
               <option>Fahrenheit</option>
               <option>Celsius</option>
             </Form.Select>
@@ -51,7 +55,7 @@ const Home = () => {
 
         <div className={style.result_cont}>
           <Form.Label>Result</Form.Label>
-          <div className={style.result}>{result}</div>
+          <div className={style.result}>{result}{' '}{resultType}</div>
         </div>
 
         <Button className={style.convert_btn} variant="primary" type="submit">
