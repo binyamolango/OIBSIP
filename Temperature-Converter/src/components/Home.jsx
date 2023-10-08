@@ -30,8 +30,6 @@ const Home = () => {
     }
   }
 
-  console.log(inputDegreeValue, inputType, result);
-
   return (
     <div className={style.content}>
       <h3 className={style.app_title}>Temperature Converter</h3>
